@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using CefSharp;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -177,7 +178,7 @@ namespace fyp
         private void Close_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
-            CefSharp.Cef.Shutdown();
+            Cef.Shutdown();
         }
         private void Maximize_Click(object sender, RoutedEventArgs e) {
             if (!Maximized)
